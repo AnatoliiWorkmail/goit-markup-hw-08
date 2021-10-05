@@ -58,6 +58,7 @@ background: var(--background-buton-color)
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;}
+
 .contact-foot{
     color: rgba(255, 255, 255, 0.6);
     
@@ -89,3 +90,4 @@ color: var(--grey-color);
 }
 a{text-decoration: none;}
 /* ссылки без подчёркивания */
+
