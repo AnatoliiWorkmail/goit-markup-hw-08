@@ -90,4 +90,5 @@ color: var(--grey-color);
 }
 a{text-decoration: none;}
 /* ссылки без подчёркивания */
-
+.site-curent{color: var(--background-buton-color);}
+/* tekuschaya stranica */
