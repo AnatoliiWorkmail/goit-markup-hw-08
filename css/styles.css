@@ -4,34 +4,42 @@
   --grey-color: #757575;
   --background-color: #2F303A;
   --white-color: #ffffff; 
+  --color-text-footer: rgba(255, 255, 255, 0.6);
+
 }
+.body-style{
+    font-family: 'Roboto','Raleway', sans-serif;
+    font-weight: 400;
+    color:var(--brand-color);
+}
+/* Logo----------------------------------------- */
 .logo-head{font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+
+font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--brand-color);
 }
 .logo-foot{font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
 color:var(--white-color);
 }
 
 .logoo{
+    font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
 color:var(--background-buton-color);}
-.body-style{
-    font-family: 'Roboto','Raleway', sans-serif;
-    font-weight: 400;
-    color:var(--brand-color);
-  
-
-}
+/* ----------link-head------------------------------------- */
 .link{font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--brand-color);
 
@@ -40,55 +48,124 @@ color: var(--brand-color);
 .link:focus{
     color:var(--background-buton-color);
 }
-.buton-sort{   
-
-font-size: 16px;
-line-height: 26px;
-}
-.buton-sort:hover, .buton-sort:focus{
-    font-size: 16px;
-    font-weight: 500;
-line-height: 26px;
-
-
-color: #FFFFFF;
-background: var(--background-buton-color)
-}
+/* contact-------------------------------------- */
 .contact-head{font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.14;
 letter-spacing: 0.02em;}
 
 .contact-foot{
-    color: rgba(255, 255, 255, 0.6);
+    color:var(--color-text-footer);
     
 }
 .adres{
     color: var(--white-color);
 }
-.name-sort{
-    font-weight: 700;
-    font-size: 18px;
-line-height: 36px;
-letter-spacing: 0.06em;
-}
-.id-sort{
-    color: var(--grey-color);
-    font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.03em;
-}
 
-.footer-back{
+.backgraund-black{
     background: var(--background-color);
 }
-.profession{
-    font-size: 16px;
-line-height: 19px;
-color: var(--grey-color);
 
-}
 a{text-decoration: none;}
 /* ссылки без подчёркивания */
 .site-curent{color: var(--background-buton-color);}
 /* tekuschaya stranica */
+li{list-style: none;}
+/* скритие точек */
+/* -----------buton--portfolio------------------ */
+.buton-sort{   
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--brand-color);
+
+}
+.buton-sort:hover, .buton-sort:focus{
+color:var(--white-color);
+background: var(--background-buton-color)
+}
+/* ------section--foto-porfolio----- */
+.name-sort{font-weight: 700;
+  font-size: 18px;
+line-height: 2.00;
+letter-spacing: 0.06em;
+color: var(--brand-color);
+}
+.id-sort{
+   font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);}
+    /* ------Index--- zakaz-uslugi- */
+    .buton-order{   
+font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color:var(--white-color);
+background: var(--background-buton-color);
+}
+.buton-order:hover, .buton-order:focus{
+color:var(--white-color);
+background: var(--background-buton-color)
+}
+/* ----------index----------h1-------- */
+.index-head{
+ font-family: Roboto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+color: var(--white-color);
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.index-head-background{
+   background-color: var(--background-color);
+}
+/* ------качества */
+.index-quality{
+   font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase; 
+color: var(--brand-color);
+}
+/*  class="index-quality-specific" */
+.index-quality-specific{
+    font-family: Roboto;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--grey-color);
+}
+/* ------------idex-img-make */
+.img-attribut{
+    font-family: Roboto;
+font-weight: 700;
+font-size: 36px;
+line-height: 1,16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/* ------index-profesion */
+.name{font-family: Roboto;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+}
+.name-profession{font-family: Roboto;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--grey-color);}
