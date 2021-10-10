@@ -55,7 +55,8 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--brand-color);}
 .contact-head:hover, .contact-head:focus{
-color: var(--background-buton-color);
+    color: var(--background-buton-color);
+
 }
 .contact-foot{
     font-size: 14px;
@@ -84,6 +85,7 @@ li{list-style: none;}
 /* скритие точек */
 /* -----------buton--portfolio------------------ */
 .buton-sort{   
+    cursor: pointer;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
