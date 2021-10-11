@@ -53,17 +53,19 @@ color: var(--brand-color);
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--brand-color);}
+color: var(--grey-color);}
 .contact-head:hover, .contact-head:focus{
     color: var(--background-buton-color);
 
 }
 .contact-foot{
+    font-style: normal;
     font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
     color:var(--color-text-footer);}
 .adres{
+    font-style: normal;
     color: var(--white-color);
         font-size: 14px;
 line-height: 1.71;
@@ -83,6 +85,7 @@ li{list-style: none;}
 /* скритие точек */
 /* -----------buton--portfolio------------------ */
 .buton-sort{   
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
 font-weight: 500;
 font-size: 16px;
