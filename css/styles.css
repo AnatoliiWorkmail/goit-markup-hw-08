@@ -7,12 +7,37 @@
   --color-text-footer: rgba(255, 255, 255, 0.6);
 
 }
+/*------------сброс маржинов и падингов--- */
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+ul {margin: 0;
+padding: 0;}
 .body-style{
     font-family: 'Roboto','Raleway', sans-serif;
     font-weight: 400;
     color:var(--brand-color);
 }
+.backgraund-black{
+    background: var(--background-color);
+}
+
+a{text-decoration: none;}
+/* ссылки без подчёркивания */
+/* ----------link-head------------------------------------- */
+.link{font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--brand-color);
+
+}
+.link:hover, 
+.link:focus{
+    color:var(--background-buton-color);
+}
 /* Logo----------------------------------------- */
+
 .logo-head{font-family: 'Raleway', sans-serif;
 
 font-weight: 700;
@@ -36,18 +61,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color:var(--background-buton-color);}
-/* ----------link-head------------------------------------- */
-.link{font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--brand-color);
 
-}
-.link:hover, 
-.link:focus{
-    color:var(--background-buton-color);
-}
 /* contact-------------------------------------- */
 .contact-head{font-weight: 500;
 font-size: 14px;
@@ -73,16 +87,12 @@ letter-spacing: 0.03em;
     
 }
 
-.backgraund-black{
-    background: var(--background-color);
-}
 
-a{text-decoration: none;}
-/* ссылки без подчёркивания */
 .site-curent{color: var(--background-buton-color);}
 /* tekuschaya stranica */
 li{list-style: none;}
 /* скритие точек */
+
 /* -----------buton--portfolio------------------ */
 .buton-sort{   
     font-family: 'Roboto', sans-serif;
@@ -186,5 +196,14 @@ color: var(--grey-color);}
 .portfolio-none{
     visibility: hidden;
 }
+/* ----container ----------------*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+
+
 
 /* ------------Позиционирование--Портфолио---------- */
