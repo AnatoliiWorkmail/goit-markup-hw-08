@@ -5,7 +5,7 @@
   --background-color: #2F303A;
   --white-color: #ffffff; 
   --color-text-footer: rgba(255, 255, 255, 0.6);
-
+  --color-baton: #f5f4fa;
 }
 /*------------сброс маржинов и падингов--- */
 h1, h2, h3, h4, h5, h6, p{
@@ -103,7 +103,15 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--brand-color);
+background-color: var(--color-baton);
+border-radius: 4px;
+        padding: 6 22;
+        border: transparent;
+        height: 38px;
 
+}
+.buton-height{
+    height: 38px;
 }
 .buton-sort:hover, .buton-sort:focus{
 color:var(--white-color);
@@ -194,16 +202,108 @@ letter-spacing: 0.03em;
 color: var(--grey-color);}
 /* спрятать заголовок */
 .portfolio-none{
-    visibility: hidden;
+    display: none;
 }
 /* ----container ----------------*/
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;}
+/* ------------Позиционирование--Портфолио----------*/
+.container-head{
+     display: flex;
     margin: 0 auto;
+}
+.container-head-logo{display: flex;
+width: 145px;
+height: 31px;
+padding-top: 24px;
+        padding-bottom: 25px;;}
+.container-head{
+    display: flex;
+}
+.menu-nav-link{
+    width: 294;
+    height: 16px;
+    padding-right: 50px;}
+.menu-nav-site{
+    padding-right: 331px;
+    padding-left: 93px;
+    display: flex;
+    padding-top: 32px;
+        padding-bottom: 32px;;
+}
+.menu{display: flex;
+      height: 80px;
+    align-items: center;
+margin-bottom: 94px;}
+      .head-mail{padding-right: 50px;
+    min-width: 135px;
+padding-top: 32px;
+        padding-bottom: 32px;;}
+    .head-tel{
+        min-width: 122px;
+        padding-top: 32px;
+        padding-bottom: 32px;;
+        height: 16px;
+    }
+    /*---------------------head-position-portfolio ------- */
+.container-portfolio{
+    
+    display: flex;
+    
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.container-portfolio:first-child{
+    justify-content:center;
+}
+.projekt-filtr{
+    display: flex;
+    min-height: 54px;
+    min-width: 611px;
 
+       justify-content:space-around;
+       height: 38px;
+       flex-wrap: wrap;
+    margin-bottom: 0;}
+     .portfolio-projekt{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content:space-between;
+  
+     min-height: 404px;
+     padding: 30 30;
+        }
+        .portfolio-projekt-element{
+           display: flexbox; 
+           min-height: 404px;
+        }
+        .id-sort{
+            margin-top: 4px;
+        margin-bottom: 20px;
+        margin-left: 24px;
+        margin-right: 24px;
+        }
+        .name-sort{
+            margin-top: 20px;
+            margin-right: 24px;
+            margin-left: 24px;
+        }
 
-
-
-/* ------------Позиционирование--Портфолио---------- */
+        /* -------Foot_---portfolio______---- */
+        .footer-portfolio{margin-top: 94px;
+            height: 252px;
+        }
+        .logo-foot{
+            min-width: 145px;
+            display: flex;
+        padding-top: 60px;
+    margin-bottom: 20px;}
+    .adres{
+        margin-bottom: 9px;
+    }
+  .contact-foot{display: flex;
+      min-width: 231px;}
