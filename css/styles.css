@@ -6,6 +6,8 @@
   --white-color: #ffffff; 
   --color-text-footer: rgba(255, 255, 255, 0.6);
   --color-baton: #f5f4fa;
+          
+  --color-border: #eeeeee; 
 }
 /*------------сброс маржинов и падингов--- */
 h1, h2, h3, h4, h5, h6, p{
@@ -94,7 +96,8 @@ li{list-style: none;}
 /* скритие точек */
 
 /* -----------buton--portfolio------------------ */
-.buton-sort{   
+.buton-sort{
+    display: flex;   
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
 font-weight: 500;
@@ -105,7 +108,10 @@ letter-spacing: 0.03em;
 color: var(--brand-color);
 background-color: var(--color-baton);
 border-radius: 4px;
-        padding: 6 22;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 22px;
+        padding-right: 22px;;
         border: transparent;
         height: 38px;
 
@@ -209,11 +215,12 @@ color: var(--grey-color);}
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;}
+    margin: 0 0;}
 /* ------------Позиционирование--Портфолио----------*/
 .container-head{
      display: flex;
-    margin: 0 auto;
+    margin: 0 0;
+     width: 1200px;
 }
 .container-head-logo{display: flex;
 width: 145px;
@@ -222,6 +229,7 @@ padding-top: 24px;
         padding-bottom: 25px;;}
 .container-head{
     display: flex;
+    padding-right: 15px;
 }
 .menu-nav-link{
     width: 294;
@@ -237,7 +245,7 @@ padding-top: 24px;
 .menu{display: flex;
       height: 80px;
     align-items: center;
-margin-bottom: 94px;}
+}
       .head-mail{padding-right: 50px;
     min-width: 135px;
 padding-top: 32px;
@@ -245,14 +253,16 @@ padding-top: 32px;
     .head-tel{
         min-width: 122px;
         padding-top: 32px;
-        padding-bottom: 32px;;
+        padding-bottom: 32px;
+        
         height: 16px;
     }
     /*---------------------head-position-portfolio ------- */
 .container-portfolio{
     
     display: flex;
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-right: auto;
     flex-wrap: wrap;
     margin-bottom: 0px;
@@ -262,13 +272,13 @@ padding-top: 32px;
 }
 .projekt-filtr{
     display: flex;
-    min-height: 54px;
+    margin-bottom: 50px;
     min-width: 611px;
 
        justify-content:space-around;
        height: 38px;
        flex-wrap: wrap;
-    margin-bottom: 0;}
+    }
      .portfolio-projekt{
          display: flex;
          flex-wrap: wrap;
@@ -280,6 +290,7 @@ padding-top: 32px;
         .portfolio-projekt-element{
            display: flexbox; 
            min-height: 404px;
+           border-bottom: 1px solid var(--color-border);
         }
         .id-sort{
             margin-top: 4px;
@@ -294,8 +305,8 @@ padding-top: 32px;
         }
 
         /* -------Foot_---portfolio______---- */
-        .footer-portfolio{margin-top: 94px;
-            height: 252px;
+        .footer-portfolio{
+          padding-bottom: 60px;
         }
         .logo-foot{
             min-width: 145px;
@@ -307,3 +318,108 @@ padding-top: 32px;
     }
   .contact-foot{display: flex;
       min-width: 231px;}
+      /* ---------inex-position-----zakaz-uslug--- */
+      .container-head-index{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+         
+        
+      }
+      .index-head{
+          display: flex;
+          padding-top: 200px;
+          padding-bottom: 40px;
+          width: 696px;
+          margin-top: 0;
+          margin-right: auto;
+         margin-left: auto;
+         margin-bottom: 0;
+      }
+      .buton-order{
+          display: flex;
+          width: 200px;
+          margin-top: 0;
+         margin-left: auto;
+         margin-right: auto;
+         border: 0px;
+         border-radius: 4px;
+         margin-bottom: 200px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 32px;
+         padding-right: 32px;
+      }
+/* -----position-index-quality----------- */
+.quality-block{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0px;
+    border-bottom: 0;
+    padding: 10px 10px 10px 10px; */
+}
+.quality-block:nth-last-of-type(n+2){margin-right: 30px;
+
+}
+.index-quality{
+    width: 270px;
+}
+.index-quality-specific{
+    padding-top: 10px;
+     width: 270px;
+}
+.container-quality{
+    display: flex;
+    padding-top: 94px;
+}
+
+/* -------index-position-attribut--- */
+.container-attribut{
+    padding-top: 94px;
+  
+}
+.img-attribut-quality{display: block;
+}
+.img-attribut-quality:nth-last-of-type(n+2){
+    padding-right: 30px;}
+.img-block{
+    display: flex;
+    padding-top: 50px;
+}
+.profesional-block{display: flex;
+    justify-content:center;
+    padding-top: 50px;
+   
+}
+.profesional-block-info{display: flex;
+    flex-direction: column;  
+
+}
+.profesional-block-info:nth-last-of-type(n+2){
+    padding-right: 30px;}
+.name {
+    display: flex;
+    justify-content:center;
+   
+    padding-top: 30px;
+   
+ padding-bottom: 10px;
+
+}
+.name-profession{padding-bottom: 30px;
+    display: flex;
+    justify-content:center;
+padding: auto;}
+.container-profesional{
+    display: block;
+    padding-top: 94px;
+}

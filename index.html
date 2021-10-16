@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <!-- нормализация -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -24,50 +23,54 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body-style">
-    <header>
-      <a class="logo-head" lang="en" href="index.html"><span class="logoo"> Web</span>Studio</a>
-
-      <nav>
-        <ul>
-          <li><a class="link site-curent" href="index.html">студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="#addres">Контакты</a></li>
-        </ul>
-      </nav>
-      <a class="contact-head" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contact-head" href="tel:+380961111111">+380961111111</a>
-    </header>
+    <div class="container menu ">
+      <header class="container-head">
+        <a class="logo-head container-head-logo" lang="en" href="index.html"
+          ><span class="logoo"> Web</span>Studio</a
+        >
+        <nav class="menu-nav" >
+          <ul class="menu-nav-site">
+            <li class="menu-nav-link"><a class="link site-curent" href="index.html">студия</a></li>
+            <li class="menu-nav-link"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu-nav-link"><a class="link" href="#addres">Контакты</a></li>
+          </ul>
+        </nav>
+        <a class="contact-head head-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="contact-head head-tel" href="tel:+380961111111">+380961111111</a>
+     
+     </div> </header>
 
     <main>
-      <section class="index-head-background">
+      <section class="container index-head-background">
+        <div class="container-head-index">
         <h1 class="index-head">эффективные решения для вашего бизнеса</h1>
         <button class="buton-order" type="button">заказать услугу</button>
-      </section>
+     </div> </section>
       <section>
         <h2></h2>
-        <ul>
-          <li>
+        <ul class="container container-quality">
+          <li class="quality-block">
             <h3 class="index-quality">внимание к деталям</h3>
             <p class="index-quality-specific">
               идейные соображения, а также начало повседневной роботы по формированию позиции.
             </p>
           </li>
 
-          <li>
+          <li  class="quality-block">
             <h3 class="index-quality">пунктуальность</h3>
             <p class="index-quality-specific">
               задача организации, в особенности же рамки и место обучения вадров влечет за собой.
             </p>
           </li>
 
-          <li>
+          <li  class="quality-block">
             <h3 class="index-quality">планирование</h3>
             <p class="index-quality-specific">
               равным образом консультация с широким активом в значительной степени обславливает.
             </p>
           </li>
 
-          <li>
+          <li  class="quality-block">
             <h3 class="index-quality">современные технологии</h3>
             <p class="index-quality-specific">
               значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -76,61 +79,64 @@
         </ul>
       </section>
 
-      <section>
+      <section> <div class="container container-attribut">
         <h2 class="img-attribut">Чем мы занимаемся</h2>
-        <ul>
-          <li><img src="./images/img-6.jpg" alt="схема" width="370" /></li>
-          <li>
+        <ul class="img-block">
+          <li class="img-attribut-quality"><img src="./images/img-6.jpg" alt="схема" width="370" /></li>
+          <li class="img-attribut-quality">
             <img src="./images/img-5.jpg" alt="мобильный вид" width="370" />
           </li>
-          <li>
+          <li class="img-attribut-quality">
             <img src="./images/img-4.jpg" alt="выбор цвета" width="370" />
           </li>
-        </ul>
+        </ul></div>
       </section>
-      <section>
+      <section> <div class="container container-profesional">
         <h2 class="img-attribut">Наша команда</h2>
 
-        <ul>
-          <li>
+        <ul class="profesional-block">
+          <li class="profesional-block-info">
             <img src="./images/img-1.jpg" alt="Игорь" width="270" height="260" />
 
             <h3 class="name">Игор Демьяненко</h3>
             <p class="name-profession" lang="en">Produkt Desinger</p>
           </li>
 
-          <li>
+          <li class="profesional-block-info">
             <img src="./images/img.jpg" alt="Ольга" width="270" height="260" />
 
             <h3 class="name">Ольга Репина</h3>
             <p class="name-profession" lang="en">Frontend Developer</p>
           </li>
 
-          <li>
+          <li class="profesional-block-info">
             <img src="./images/img-2.jpg" alt="Николай" width="270" height="260" />
 
             <h3 class="name">Николай Тарасов</h3>
             <p class="name-profession" lang="en">Marketing</p>
           </li>
 
-          <li>
+          <li class="profesional-block-info">
             <img src="./images/img-3.jpg" alt="Михаил" width="270" height="260" />
 
             <h3 class="name">Михаил Ермаков</h3>
             <p class="name-profession" lang="en">UI Desinger</p>
           </li>
-        </ul>
+        </ul></div>
       </section>
     </main>
-    <footer class="backgraund-black">
-      <a class="logo-foot" lang="en" href="index.html"><span class="logoo"> Web</span>Studio</a>
+    </main>
+      <footer class="container  backgraund-black">
+        <div class=" footer-portfolio">
+        <a class="logo-foot" lang="en" href="index.html"><span class="logoo"> Web</span>Studio</a>
 
-      <address id="addres">
-        <p class="adres">г.Киев, пр-т Леси Украинки, 26</p>
-        <p><a class="contact-foot" href="mailto:info@example.com">info@example.com</a></p>
-        <p><a class="contact-foot" href="tel:+380991111111">+380991111111</a></p>
-      </address>
-    </footer>
+        <address class="foot-adres" id="addres">
+          <p class="adres">г.Киев, пр-т Леси Украинки, 26</p>
+          <p class="adres"><a class="contact-foot" href="mailto:info@example.com">info@example.com</a></p>
+          <p class="adres"><a class="contact-foot" href="tel:+380991111111">+380991111111</a></p>
+        </address></div>
+      </footer>
+    
   </body>
 </html>
 <!---->
