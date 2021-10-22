@@ -220,22 +220,22 @@ color: var(--grey-color);}
     padding-right: 15px;
     margin: 0 auto;}
 /* ------------Позиционирование--Портфолио----------*/
-/* .container-head{
+.container-head{
      display: flex;
     margin: 0 auto;
      width: 1200px;
-} */
+}
 .container-head-nav{display:flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
     justify-content: center;
     align-items: center;
 }
 .container-head-logo{display: flex;
-width: 145px;
+width: 145px;}
 
-margin-top: 24px;
-      margin-bottom: 25px;}
+/* margin-top: 24px;
+      margin-bottom: 25px; }*/
 /* .container-head{
     display: flex;
     padding-right: 15px;
@@ -247,6 +247,10 @@ margin-top: 24px;
     width: 294;
     height: 16px;
     padding-right: 50px;}
+    .menu-nav-link:last-child{
+        padding-right: 0;
+    }
+
 .menu-nav-site{
     margin-right: 331px;
     margin-left: 93px;
@@ -254,16 +258,20 @@ margin-top: 24px;
   
 }
 .menu{display: flex;
-      height: 80px;
+     justify-content: center;
     align-items: center;
-  
-}
+    
+  }
+
+  .head{
+    padding-top: 24px;
+    padding-bottom: 25px;}
 .menu-line{ border-bottom: 1px solid #ECECEC;}
       .head-mail{margin-right: 50px;
-    min-width: 135px;
+    width: 135px;
 ;}
     .head-tel{
-        min-width: 122px;
+        width: 122px;
        
            }
     /*---------------------head-position-portfolio ------- */
@@ -291,16 +299,11 @@ margin-top: 24px;
     flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
-      
-     
-       
-
-}
+     }
 .projekt-filtr{
     display: flex;
     margin-bottom: 50px;
     min-width: 611px;
-
        justify-content:space-around;
        height: 38px;
        flex-wrap: wrap;
@@ -338,9 +341,9 @@ margin-top: 24px;
         .id-sort{
             margin-top: 4px;}
         
-        .name-sort{
+        /* .name-sort{
           
-        }
+        } */
         .portfolio-text{display: flex;
             padding-top: 20px;
             padding-bottom: 20px;
