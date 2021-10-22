@@ -114,6 +114,8 @@ border-radius: 4px;
         padding-right: 22px;;
         border: transparent;
         height: 38px;
+        margin-left: 4px;
+        margin-right: 4px;
 
 }
 .buton-height{
@@ -215,48 +217,54 @@ color: var(--grey-color);}
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 0;}
+    margin: 0 auto;}
 /* ------------Позиционирование--Портфолио----------*/
-.container-head{
+/* .container-head{
      display: flex;
-    margin: 0 0;
+    margin: 0 auto;
      width: 1200px;
+} */
+.container-head-nav{display:flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    justify-content: center;
+    align-items: center;
 }
 .container-head-logo{display: flex;
 width: 145px;
-height: 31px;
-padding-top: 24px;
-        padding-bottom: 25px;;}
-.container-head{
+
+margin-top: 24px;
+      margin-bottom: 25px;}
+/* .container-head{
     display: flex;
     padding-right: 15px;
-}
+} */
+/* -------navigation--------------- */
+
+
 .menu-nav-link{
     width: 294;
     height: 16px;
     padding-right: 50px;}
 .menu-nav-site{
-    padding-right: 331px;
-    padding-left: 93px;
+    margin-right: 331px;
+    margin-left: 93px;
     display: flex;
-    padding-top: 32px;
-        padding-bottom: 32px;;
+  
 }
 .menu{display: flex;
       height: 80px;
     align-items: center;
+  
 }
-      .head-mail{padding-right: 50px;
+.menu-line{ border-bottom: 1px solid #ECECEC;}
+      .head-mail{margin-right: 50px;
     min-width: 135px;
-padding-top: 32px;
-        padding-bottom: 32px;;}
+;}
     .head-tel{
         min-width: 122px;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        
-        height: 16px;
-    }
+       
+           }
     /*---------------------head-position-portfolio ------- */
 .container-portfolio{
     
@@ -266,9 +274,23 @@ padding-top: 32px;
     margin-right: auto;
     flex-wrap: wrap;
     margin-bottom: 0px;
-}
-.container-portfolio:first-child{
+    justify-content: center;}
+
+.container-portfolio:last-child{
+    display: flex;
     justify-content:center;
+   
+    
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+      
+     
+       
+
 }
 .projekt-filtr{
     display: flex;
@@ -282,36 +304,53 @@ padding-top: 32px;
      .portfolio-projekt{
          display: flex;
          flex-wrap: wrap;
-         justify-content:space-between;
-  
-     min-height: 404px;
-     padding: 30 30;
+         align-content: center;
+           flex-basis: calc(100% / 9 - 30px);
+           margin-left: 30px;
+           margin-bottom: 30px;      
+         
+                min-height: 404px;
+             }
+             /* .portfolio-projekt:nth-child(n+4){
+                  margin-top: 30px;
+
+             } */
+             /* .portfolio-projekt:not(3n+1){
+                 margin-left: 0;
+             } */
+        .portfolio-text{display: flex;
+            flex-direction: column;
+        
         }
         .portfolio-projekt-element{
-           display: flexbox; 
+           display: flex; 
            min-height: 404px;
+           width: 370px;
            border-bottom: 1px solid var(--color-border);
-        }
+           border-top: 1px solid var(--color-border);
+           border-right: 1px solid var(--color-border);
+           border-left: 1px solid  var(--color-border);
+        flex-direction: column;}
         .id-sort{
-            margin-top: 4px;
-        margin-bottom: 20px;
-        margin-left: 24px;
-        margin-right: 24px;
-        }
+            margin-top: 4px;}
+        
         .name-sort{
-            margin-top: 20px;
-            margin-right: 24px;
-            margin-left: 24px;
+          
         }
+        .portfolio-text{display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 24px;
+            padding-left: 24px;}
 
         /* -------Foot_---portfolio______---- */
         .footer-portfolio{
-          padding-bottom: 60px;
+         padding-top: 60px;
+            padding-bottom: 60px;
         }
         .logo-foot{
             min-width: 145px;
             display: flex;
-        padding-top: 60px;
     margin-bottom: 20px;}
     .adres{
         margin-bottom: 9px;
@@ -329,13 +368,11 @@ padding-top: 32px;
       }
       .index-head{
           display: flex;
-          padding-top: 200px;
-          padding-bottom: 40px;
-          width: 696px;
-          margin-top: 0;
+           width: 696px;
+          margin-top: 200px;
           margin-right: auto;
          margin-left: auto;
-         margin-bottom: 0;
+         margin-bottom: 40px;
       }
       .buton-order{
           display: flex;
@@ -367,61 +404,76 @@ padding-top: 32px;
     border-bottom: 0;
     padding: 10px 10px 10px 10px; */
 }
-.quality-block:nth-last-of-type(n+2){margin-right: 30px;
+.quality-block:nth-last-of-type(n+2){
+    display: flex;
+    margin-right: 30px;
 
 }
+.quality{
+    display:flex;
+    padding-top: 94px;
+    padding-bottom: 47px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
 .index-quality{
     width: 270px;
 }
 .index-quality-specific{
-    padding-top: 10px;
+   margin-top: 10px;
      width: 270px;
 }
-.container-quality{
-    display: flex;
-    padding-top: 94px;
-}
+.container-quality{display: flex;}
+    
 
 /* -------index-position-attribut--- */
 .container-attribut{
-    padding-top: 94px;
+    padding-top: 47px;
+    padding-bottom: 94px;
   
 }
 .img-attribut-quality{display: block;
 }
 .img-attribut-quality:nth-last-of-type(n+2){
-    padding-right: 30px;}
+    margin-right: 30px;}
 .img-block{
     display: flex;
-    padding-top: 50px;
+   margin-top: 50px;
 }
 .profesional-block{display: flex;
     justify-content:center;
-    padding-top: 50px;
+    margin-top: 50px;
    
 }
-.profesional-block-info{display: flex;
+.profesional-block-info{
     flex-direction: column;  
 
 }
 .profesional-block-info:nth-last-of-type(n+2){
-    padding-right: 30px;}
+   margin-right: 30px;}
 .name {
     display: flex;
     justify-content:center;
-   
-    padding-top: 30px;
-   
- padding-bottom: 10px;
+     
+margin-bottom: 10px;
 
 }
-.name-profession{padding-bottom: 30px;
+.name-profession{
     display: flex;
     justify-content:center;
 padding: auto;}
 .container-profesional{
     display: block;
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+.name-profesion-bloc{
+    display:block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 /* 
 .big-container{
