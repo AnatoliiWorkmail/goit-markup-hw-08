@@ -20,9 +20,7 @@ padding: 0;}
     font-weight: 400;
     color:var(--brand-color);
 }
-.backgraund-black{
-    background: var(--background-color);
-}
+
 
 a{text-decoration: none;}
 /* ссылки без подчёркивания */
@@ -168,6 +166,9 @@ text-transform: uppercase;
 }
 .index-head-background{
    background-color: var(--background-color);
+padding-top: 200px;
+padding-bottom: 200px;
+
 }
 /* ------качества */
 .index-quality{
@@ -267,21 +268,24 @@ margin-top: 24px;
            }
     /*---------------------head-position-portfolio ------- */
 .container-portfolio{
-    
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-right: auto;
     flex-wrap: wrap;
     margin-bottom: 0px;
-    justify-content: center;}
+    justify-content: center;
+}
+    
+    .portfolio-section{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
-.container-portfolio:last-child{
+/* .container-portfolio:last-child{
     display: flex;
     justify-content:center;
-   
-    
-}
+   align-content: center;
+    } */
+
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
@@ -347,7 +351,8 @@ margin-top: 24px;
         .footer-portfolio{
          padding-top: 60px;
             padding-bottom: 60px;
-        }
+            background: var(--background-color);
+}
         .logo-foot{
             min-width: 145px;
             display: flex;
@@ -369,7 +374,7 @@ margin-top: 24px;
       .index-head{
           display: flex;
            width: 696px;
-          margin-top: 200px;
+        
           margin-right: auto;
          margin-left: auto;
          margin-bottom: 40px;
@@ -382,7 +387,7 @@ margin-top: 24px;
          margin-right: auto;
          border: 0px;
          border-radius: 4px;
-         margin-bottom: 200px;
+         
          padding-top: 10px;
          padding-bottom: 10px;
          padding-left: 32px;
