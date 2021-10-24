@@ -360,6 +360,14 @@ width: 145px;}
            border-right: 1px solid var(--color-border);
            border-left: 1px solid  var(--color-border);
         flex-direction: column;}
+        .portfolio-projekt-element:hover,
+        .portfolio-projekt-element:focus{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+             0px 4px 4px rgba(0, 0, 0, 0.06),
+             1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+
         .id-sort{
             margin-top: 4px;}
         
@@ -604,3 +612,64 @@ border-radius: 4px;
  .client-logo:not(last-child){
      margin-right: 30px;
  }
+
+
+ /* ----------footer-icon--link-------------
+ ------------------------------ */
+.footer-container{display: flex;}
+ .footer-name-link{display: flex;}
+ .footer-container-link{display: block;
+   justify-content: center;
+   align-content: center;
+}
+.footer-conteiner-adress{
+    margin-right: 70px;
+}
+
+
+
+.footer-personal-link-icon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 12px;
+    fill: var(--white-color);
+
+}    
+.footer-personal-contact{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-content: center;   
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+   }
+   .footer-personal-contact:last-child{
+       margin-right: 0;
+   }
+.footer-personal-link{display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    
+
+  }
+    .footer-personal-link:focus, .footer-personal-link:hover{
+    background-color: var(--background-buton-color);
+    border-radius: inherit;
+    }
+    .footer-block-link-name{
+        font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.03em;
+width: 145px;
+margin-bottom: 20px;
+
+color: var(--white-color);
+    }
