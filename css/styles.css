@@ -599,12 +599,18 @@ padding: auto;}
 border-radius: 4px;
  }
  .client-logo:hover .client-logo-icon,
- .client-logo:focus  .client-logo-icon{
+ .client-logo:focus  .client-logo-icon
+ {
 fill: var(--background-buton-color);
     border: 1px solid var(--background-buton-color);
 border-radius: 4px;
  }
+.client-logo-link:focus .client-logo-icon{
+    fill: var(--background-buton-color);
+    border: 1px solid var(--background-buton-color);
+border-radius: 4px;
 
+}
  .container-client{
      padding-bottom: 94px;
      padding-top: 94px;
