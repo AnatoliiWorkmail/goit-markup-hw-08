@@ -553,7 +553,7 @@ width: 145px;}
     justify-content: center;
      background:var(--color-baton);
      border-radius: 4px;
-
+     height: 120px;
 }
     
 
@@ -573,7 +573,7 @@ width: 145px;}
     position: absolute;
     font-family: Roboto;
 font-weight: 700;
-
+font-size: 14px;
 line-height: 1.14;
 text-align: center;
 letter-spacing: 0.03em;
