@@ -96,8 +96,7 @@ letter-spacing: 0.03em;
 }
 
 
-.site-curent{color: var(--background-buton-color);}
-/* tekuschaya stranica */
+
 li{list-style: none;}
 /* скритие точек */
 
@@ -376,7 +375,7 @@ width: 145px;}
             
         
         }
-        .portfolio-projekt-element{position: relative;
+        .portfolio-projekt-element{
            display: flex; 
            min-height: 404px;
            width: 370px;
@@ -385,10 +384,12 @@ width: 145px;}
            border-right: 1px solid var(--color-border);
            border-left: 1px solid  var(--color-border);
         flex-direction: column;
-        
-                       overflow: hidden;
-    
-    }
+          } 
+         .portfolio-projekt-wrap{
+             display: flex;
+             position: relative;
+             overflow: hidden; 
+         }
   
   
         .portfolio-projekt-element:hover .portfolio-overflow,
@@ -446,7 +447,7 @@ width: 145px;}
           
         } */
         .portfolio-text{display: flex;
-          background-color: white;
+          /* background-color: white; */
             padding-top: 20px;
             padding-bottom: 20px;
             padding-right: 24px;
@@ -788,3 +789,72 @@ margin-bottom: 20px;
 
 color: var(--white-color);
     }
+
+
+
+    /* --------Backdrop-------------- */
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    transition: opacity 500ms linear, visibility 500ms linear;
+    
+}
+    .modal{
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: scale(1)  translate(-50%, -50%);
+    transition: transform  1000ms linear;
+
+} 
+.model-btn{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.backdrop.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.is-hidden .modal{
+   
+    transform: scale(0.4);
+     transition: transform  1000ms linear;
+    
+}
+
+
+/* --------------------------------- */
+.site-curent{
+    color: var(--background-buton-color);
+}
+.link.site-curent::after{
+  
+    content: '';
+   display: block;
+  margin-top: 28px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--background-buton-color);
+}
+
+
+/* tekuschaya stranica */
