@@ -425,13 +425,49 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- Modal------ is-hidden --- -->
+    <div class="backdrop " data-modal>
       <div class="modal">
         <button class="model-btn" type="button" data-modal-close>
           <svg class="model-close-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="" class="contact-form">
+          <p class="name-form">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="contact-form-label" >Имя<div class="contact-form-input-position">
+            <input class="contact-form-input" type="text" name="name" />
+            <svg class="contact-form-icon"
+            width="18px" height="18px">
+            <use href="./images/icons.svg#icon-person-black"></use></svg>
+           </div></label>
+          <label class="contact-form-label" >Телефон<div class="contact-form-input-position">
+            <input class="contact-form-input" type="tel" name="tel" />
+            <svg class="contact-form-icon"
+            width="18px" height="18px">
+            <use href="./images/icons.svg#icon-phone-black"></use></svg></div> </label>
+          <label class="contact-form-label" >Почта<div class="contact-form-input-position">
+            <input class="contact-form-input" type="email" name="email" />
+
+            <svg class="contact-form-icon"
+            width="18px" height="18px">
+            <use href="./images/icons.svg#icon-email-black"></use></svg></div> </label>
+          <label class="contact-form-label" >Комментарий<textarea
+            class="contact-form-koment"
+            name="message"
+            placeholder="Введите текст"
+          ></textarea></label>     
+          <div class="form-checkbox-grup">
+          <input 
+            class="contact-form-input-checkbox"
+            type="checkbox" id="form-checkbox">
+            <label for="form-checkbox" class="contact-form-label-chechbox"></label>
+            Соглашаюсь с рассылкой и принимаю 
+            <a href="#">Условия договора</a></label></div>  
+
+          <button class="contact-form-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <!-- подключение скрипта -->
