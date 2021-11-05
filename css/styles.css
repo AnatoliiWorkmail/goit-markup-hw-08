@@ -1003,19 +1003,32 @@ justify-content: center;
 } */
 
 .contact-form-label-chechbox::before {
-  display: block;
+  display: flex;
   content: '';
   width: 16px;
   height: 15px;
+  /* position: absolute; */
+ 
   
   border: 2px solid var(--brand-color);
   border-radius: 2px;
   cursor: pointer;
+   background-color: transparent;
+ 
+  z-index: 3;
+   }
+   .contact-form-input-checkbox{
+       z-index: 1;
    }
 
 
 
 .contact-form-input-checkbox:checked +.contact-form-label-chechbox::before{
     
-    background-image: url("./images/icons.svg#icon-email-black");
+     background-image: url("../images/vectorok.svg"),
+   linear-gradient(to bottom, rgba(33, 150, 243, 1), rgba(33, 150, 243, 1));
+  border: none;
+  
+     
+    z-index: 5;
    }
