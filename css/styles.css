@@ -958,7 +958,7 @@ letter-spacing: 0.03em;
 } */
 .form-checkbox-grup{
     position: relative;
-    display: flex;
+    display: block;
     margin-top: 20px;
     font-size: 14px;
 line-height: 1.71;
@@ -978,10 +978,13 @@ justify-content: center;
     background-image: url("./images/icons.svg#icon-email-black");
 
 } */
-.contact-form-label-chechbox{
-    display: inline-block;
-}
+
+/* .form-checkbox-svg:focus-visible{ 
+    border: 2px solid var(--brand-color);
+ }
 .form-checkbox-svg{
+    position: absolute;
+    left: 0%;
     background-color: var(--white-color);
     fill: var(--white-color);
     border-radius: 3px;
@@ -993,8 +996,26 @@ justify-content: center;
     border-color: var(--background-buton-color);
 }
 
-.contact-form-input-checkbox:checked + .form-checkbox-svg{
+.form-checkbox-grup>.contact-form-input-checkbox:checked ~ .form-checkbox-svg{
     fill: var(--white-color);
     background-color: var(--background-buton-color);
     border-color: var(--background-buton-color);
-}
+} */
+
+.contact-form-label-chechbox::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  
+  border: 2px solid var(--brand-color);
+  border-radius: 2px;
+  cursor: pointer;
+   }
+
+
+
+.contact-form-input-checkbox:checked +.contact-form-label-chechbox::before{
+    
+    background-image: url("./images/icons.svg#icon-email-black");
+   }
