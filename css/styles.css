@@ -1066,6 +1066,7 @@ justify-content: center;
 } */
 .contact-form-label-chechbox{
     cursor: pointer;
+    padding-left: 7px;
     
 }
 .contact-form-label-chechbox::before {
@@ -1089,15 +1090,21 @@ justify-content: center;
    }
    .contact-form-input-checkbox{
        z-index: 1;
-       width: 14px;
-  height: 13px;
+       width: 12px;
+  height: 11px;
        border: none;
 
        /* visibility: hidden; */
    }
 
 
+.contact-form-input-checkbox:focus +.contact-form-label-chechbox::before{
+    outline:  2px solid var(--brand-color);
+}
 
+.contact-form-input-checkbox:focus{
+   outline: none;
+}
 .contact-form-input-checkbox:checked +.contact-form-label-chechbox::before{
     
      background-image: url("../images/vectorok.svg"),
