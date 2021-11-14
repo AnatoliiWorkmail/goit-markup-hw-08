@@ -1,0 +1,19 @@
+:root {
+  --brand-color: #212121;
+  --background-buton-color:#2196F3;
+  --grey-color: #757575;
+  --background-color: #2F303A;
+  --white-color: #ffffff; 
+  --color-text-footer: rgba(255, 255, 255, 0.6);
+  --color-baton: #f5f4fa;
+          
+  --color-border: #eeeeee; 
+  --color-icon: #AFB1B8;
+  
+}
+/*------------сброс маржинов и падингов--- */
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+ul {margin: 0;
+padding: 0;}
