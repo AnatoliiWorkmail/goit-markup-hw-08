@@ -1,1 +1,158 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+:root {
+  --brand-color: #212121;
+  --background-buton-color:#2196F3;
+  --grey-color: #757575;
+  --background-color: #2F303A;
+  --white-color: #ffffff;
+  --color-text-footer: rgba(255, 255, 255, 0.6);
+  --color-baton: #f5f4fa;
+  --color-border: #eeeeee;
+  --color-icon: #AFB1B8;
+}
+
+/*------------сброс маржинов и падингов--- */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.body-style {
+  font-family: 'Roboto','Raleway', sans-serif;
+  font-weight: 400;
+  color: var(--brand-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ссылки без подчёркивания */
+li {
+  list-style: none;
+}
+
+/* скритие точек */
+.logo-head {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+
+.logo-foot {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.logoo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--background-buton-color);
+}
+
+/* contact-------------------------------------- */
+.contact-head {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+  transition: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-head:hover, .contact-head:focus {
+  color: var(--background-buton-color);
+}
+
+.contact-foot {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text-footer);
+}
+
+.adres {
+  font-style: normal;
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ----------link-head------------------------------------- */
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  transition: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover, .link:focus {
+  color: var(--background-buton-color);
+}
+
+/* ------Index--- zakaz-uslugi- */
+.buton-order {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--background-buton-color);
+  transition: color, background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buton-order:hover, .buton-order:focus {
+  color: var(--white-color);
+  background: var(--background-buton-color);
+}
+
+/* ----------index----------h1-------- */
+.index-head {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.index-head-background {
+  background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-h1.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
+  background-position: center;
+}
+/*# sourceMappingURL=main.css.map */

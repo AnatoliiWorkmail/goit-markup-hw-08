@@ -1,0 +1,44 @@
+   /* ------Index--- zakaz-uslugi- */ 
+ .buton-order{   
+font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color:var(--white-color);
+background: var(--background-buton-color);
+  transition: color, background;
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus{
+color:var(--white-color);
+background: var(--background-buton-color)
+}
+}
+
+/* ----------index----------h1-------- */
+.index-head{
+ font-family: Roboto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+color: var(--white-color);
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.index-head-background{
+   background-color: var(--background-color);
+padding-top: 200px;
+padding-bottom: 200px;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)),
+url(../images/img-h1.jpg) ;
+background-repeat: no-repeat;
+background-size: 1600px 600px;
+background-position: center;
+
+}
