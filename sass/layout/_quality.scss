@@ -1,0 +1,76 @@
+   
+/* ------качества */
+.index-quality{
+   font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase; 
+color: var(--brand-color);
+}
+/*  class="index-quality-specific" */
+.index-quality-specific{
+    font-family: Roboto;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--grey-color);
+}
+
+/* -----position-index-quality----------- */
+.quality-block{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0px;
+    border-bottom: 0;
+    padding: 10px 10px 10px 10px; */
+&:nth-last-of-type(n+2){
+    display: flex;
+    margin-right: 30px;
+
+}
+
+}
+
+.quality{
+    display:flex;
+    padding-top: 94px;
+    padding-bottom: 47px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.index-quality{
+    width: 270px;
+    margin-top: 30px;
+}
+.index-quality-specific{
+   margin-top: 10px;
+     width: 270px;
+}
+.container-quality{display: flex;}
+/* -------------icon-index-quality---- */
+
+.quality-icon{display: flex;
+    justify-content: center;
+      
+ 
+}
+.quality-icon-container{
+    display: flex;
+    justify-content: center;
+     background:var(--color-baton);
+     border-radius: 4px;
+     height: 120px;
+}
+    

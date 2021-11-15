@@ -42,3 +42,37 @@ background-size: 1600px 600px;
 background-position: center;
 
 }
+
+ 
+      /* ---------inex-position-----zakaz-uslug--- */
+      .container-head-index{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          
+         
+        
+      }
+      .index-head{
+          display: flex;
+           width: 696px;
+        
+          margin-right: auto;
+         margin-left: auto;
+         margin-bottom: 40px;
+      }
+      .buton-order{
+          display: flex;
+          width: 200px;
+          margin-top: 0;
+         margin-left: auto;
+         margin-right: auto;
+         border: 0px;
+         border-radius: 4px;
+         
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 32px;
+         padding-right: 32px;
+      }

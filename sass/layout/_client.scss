@@ -1,0 +1,39 @@
+
+
+ /* ---------------icon-client--------------------------------------------
+ ----------------------------------------------------- */
+ .client{display: flex;}
+ .client-logo-icon{
+     fill: var(--color-icon);
+    border: 1px solid var(--color-icon);
+border-radius: 4px;
+
+ transition: fill, border, border-radius;
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+ }
+ .client-logo:hover .client-logo-icon,
+ .client-logo:focus  .client-logo-icon
+ {
+fill: var(--background-buton-color);
+    border: 1px solid var(--background-buton-color);
+border-radius: 4px;
+ }
+.client-logo-link:focus .client-logo-icon{
+    fill: var(--background-buton-color);
+    border: 1px solid var(--background-buton-color);
+border-radius: 4px;
+
+}
+ .container-client{
+     padding-bottom: 94px;
+     padding-top: 94px;
+ }
+ .client{ display: flex;
+     margin-top: 50px;
+ }
+ .client-logo:not(last-child){
+     margin-right: 30px;
+ }
+

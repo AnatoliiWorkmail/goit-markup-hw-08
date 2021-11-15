@@ -18,3 +18,14 @@ a{text-decoration: none;}
 
 li{list-style: none;}
 /* скритие точек */
+/* спрятать заголовок */
+.portfolio-none{
+    display: none;
+}
+
+/* ----container ----------------*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;}
