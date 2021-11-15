@@ -662,6 +662,10 @@ li {
   z-index: 1;
 }
 
+.img-attribut-quality:nth-last-of-type(n+2) {
+  margin-right: 30px;
+}
+
 .image-attribut-text {
   width: 370px;
   height: 70px;
@@ -678,10 +682,6 @@ li {
   padding-bottom: 27px;
   background: rgba(47, 48, 58, 0.8);
   top: 224px;
-}
-
-.image-attribut-text:nth-last-of-type(n+2) {
-  margin-right: 30px;
 }
 
 .img-block {
