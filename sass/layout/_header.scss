@@ -12,19 +12,46 @@ transition: color;
     color:var(--background-buton-color);
 }
 }
-.container-head{
-     display: flex;
-    margin: 0 auto;
-     width: 1200px;
+.link--site-curent{font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--brand-color);
+transition: color;
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, 
+&:focus{
+    color: var(--background-buton-color);
 }
-.container-head-nav{display:flex;
+&::after{
+  
+    content: '';
+   display: block;
+  margin-top: 28px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--background-buton-color);
+}
+}
+/* tekuschaya stranica */
+
+
+
+// .container-head{
+//      display: flex;
+//     margin: 0 auto;
+//      width: 1200px;
+// }
+.container__head-nav{display:flex;
     /* padding-top: 32px;
     padding-bottom: 32px; */
     justify-content: center;
     align-items: center;
 }
 
-.menu-nav-link{
+.menu-nav__link{
     width: 294;
     height: 16px;
     padding-right: 50px;
@@ -34,7 +61,7 @@ transition: color;
 
   }
     
-.menu-nav-site{
+.menu-nav__site{
     margin-right: 305px;
     margin-left: 93px;
     display: flex;
@@ -45,57 +72,64 @@ transition: color;
     align-items: center;
     
   }
-.contact-head{
-  display: flex;
-}
+// .contact-head{
+//   display: flex;
+// }
   .head{
     padding-top: 24px;
     padding-bottom: 25px;
+     border-bottom: 1px solid #ECECEC;
   }
-.menu-line{
-   border-bottom: 1px solid #ECECEC;
-  }
-      .head-mail{
+
+      .head-mail{display: flex;
         justify-content: center;
         margin-right: 50px;
-        width: 161px;}
-     .contact-icon-envelope {
+        width: 161px;
+      font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-color);
+transition: color;
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus{
+    color: var(--background-buton-color);}
+      }
+     .head-mail__icon {
        fill: var(--color-icon);
         margin-right: 10px;
       transition: fill;
  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-   .contact-icon-tel{
+   .head-tel__icon {
        fill: var(--color-icon);
         margin-right: 10px;
         transition: fill;
         transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
-     .head-tel:focus .contact-icon-tel,
-     .head-tel:hover .contact-icon-tel{
+     .head-tel:focus .head-tel__icon,
+     .head-tel:hover .head-tel__icon{
          fill:var(--background-buton-color)
      } 
-     .head-mail:focus .contact-icon-envelope,
-     .head-mail:hover .contact-icon-envelope{
+     .head-mail:focus .head-mail__icon,
+     .head-mail:hover .head-mail__icon{
          fill:var(--background-buton-color)
      }
-    .head-tel{
+    .head-tel{display: flex;
+
         width: 142px;
+        font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-color);
+transition: color;
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus{
+    color: var(--background-buton-color);}
       }
 
-.site-curent{
-    color: var(--background-buton-color);
-}
-.link.site-curent::after{
-  
-    content: '';
-   display: block;
-  margin-top: 28px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--background-buton-color);
-}
-/* tekuschaya stranica */
