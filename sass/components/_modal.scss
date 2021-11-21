@@ -31,12 +31,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-.model-btn:hover .model-close-icon{
+
+    &:hover .model-close-icon{
     fill: var(--background-buton-color);
     cursor: pointer;
 }
+
+    
+}
+
 
 .backdrop.is-hidden{
     visibility: hidden;

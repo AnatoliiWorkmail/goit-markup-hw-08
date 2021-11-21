@@ -81,7 +81,8 @@ transition: color;
      border-bottom: 1px solid #ECECEC;
   }
 
-      .head-mail{display: flex;
+      .head-mail{
+        display: flex;
         justify-content: center;
         margin-right: 50px;
         width: 161px;
@@ -95,6 +96,12 @@ transition: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, &:focus{
     color: var(--background-buton-color);}
+
+     &:focus .head-mail__icon,
+     &:hover .head-mail__icon{
+         fill:var(--background-buton-color)
+     }
+
       }
      .head-mail__icon {
        fill: var(--color-icon);
@@ -110,15 +117,12 @@ transition: color;
         transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
-     .head-tel:focus .head-tel__icon,
-     .head-tel:hover .head-tel__icon{
+     
+    .head-tel{display: flex;
+      &:focus .head-tel__icon,
+     &:hover .head-tel__icon{
          fill:var(--background-buton-color)
      } 
-     .head-mail:focus .head-mail__icon,
-     .head-mail:hover .head-mail__icon{
-         fill:var(--background-buton-color)
-     }
-    .head-tel{display: flex;
 
         width: 142px;
         font-weight: 500;
@@ -131,5 +135,6 @@ transition: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, &:focus{
     color: var(--background-buton-color);}
+
       }
 

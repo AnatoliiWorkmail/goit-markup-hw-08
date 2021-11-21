@@ -41,10 +41,11 @@
     margin-right: 10px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-   }
-   .footer-personal-contact:last-child{
+ &:last-child{
        margin-right: 0;
    }
+   }
+  
 .footer-personal-link{display: flex;
     width: 100%;
     height: 100%;
@@ -54,13 +55,15 @@
  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    
-
-  }
-    .footer-personal-link:focus, .footer-personal-link:hover{
+  &:focus,
+  &:hover{
     background-color: var(--background-buton-color);
     border-radius: inherit;
     }
+    
+
+  }
+    
     .footer-block-link-name{
         font-family: Roboto;
 font-style: normal;

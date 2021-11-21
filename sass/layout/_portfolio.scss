@@ -69,7 +69,14 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
     z-index: 1;
         }
-
+&:hover .portfolio-overflow,
+&:focus .portfolio-overflow{       
+          transform: translatey(0);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+             0px 4px 4px rgba(0, 0, 0, 0.06),
+             1px 4px 6px rgba(0, 0, 0, 0.16);
+             z-index: 3;
+        } 
           } 
          .portfolio-projekt-wrap{
              display: flex;
@@ -78,17 +85,7 @@
          }
   
   
-        .portfolio-projekt-element:hover .portfolio-overflow,
-        .portfolio-projekt-element:focus .portfolio-overflow{
-       
-          transform: translatey(0);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-             0px 4px 4px rgba(0, 0, 0, 0.06),
-             1px 4px 6px rgba(0, 0, 0, 0.16);
-             z-index: 3;
-        }
-      
-  
+        
         .portfolio-overflow{
            width: 370px;
            height: 294px;
