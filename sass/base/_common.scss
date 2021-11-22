@@ -24,8 +24,12 @@ li{list-style: none;}
 }
 
 /* ----container ----------------*/
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;}
+    margin: 0 auto;
+@media screen and (min-width: 320px) and (max-width: 1199px){
+     width: 100vw;}
+    }

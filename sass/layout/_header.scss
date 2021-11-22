@@ -1,16 +1,115 @@
-/* ----------link-head------------------------------------- */
-.link{font-weight: 500;
+.container__head-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 320px) and (max-width: 767px){
+display: none;
+  }
+}
+
+.menu__button{position: absolute;
+  right: 20px;
+    background-color: transparent;
+    border: none;
+  @media screen and (min-width: 768px){display: none;}
+  }  
+    .menu{position: relative;
+      display: flex;
+    justify-content: space-evenly;
+  width: inherit;
+  height: inherit;
+  padding-top: 16px;
+  }
+  .head{
+   
+  justify-content: space-between; 
+  align-items: center;
+    height: 60px;
+     border-bottom: 1px solid #ECECEC;
+     @media screen and (min-width: 768px) and (max-width: 1199px){
+ width: 100vw;
+     }
+     @media screen and (min-width: 768px){
+       height: 80px;
+     }
+  }
+.menu-nav__site{display: flex;
+
+   @media screen and (min-width: 1200px){
+    margin-right: 305px;
+    margin-left: 93px;}
+    
+  
+}
+.head-mail{
+  display: block;
+font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--brand-color);
+color: var(--grey-color);
 transition: color;
  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, 
-&:focus{
-    color:var(--background-buton-color);
+&:hover, &:focus{
+    color: var(--background-buton-color);}
+
+     &:focus .head-mail__icon,
+     &:hover .head-mail__icon{
+         fill:var(--background-buton-color)
+     }
+   @media screen and (min-width: 1200px){
+     
+        display: flex;
+        justify-content: center;
+        margin-right: 50px;
+        width: 161px;
+      
+
+   }
 }
+.head-tel{
+  display: block;
+ &:focus .head-tel__icon,
+     &:hover .head-tel__icon{
+         fill:var(--background-buton-color)
+     } 
+
+        width: 142px;
+        font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-color);
+transition: color;
+ transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus{
+    color: var(--background-buton-color);}
+   @media screen and (min-width: 1200px){
+display: flex;
+     
+   }
+}
+.header__contact{}
+
+.menu-nav__link{
+    width: 294;
+    height: 16px;
+    padding-right: 50px;
+
+  &:last-child{
+        padding-right: 0;
+    }
+    }
+    .menu-nav{
+      
+      margin-right: 80px;
+    }
+    .header__contact{
+      @media screen and (min-width: 1200px){
+      display:flex;
+  }
 }
 .link--site-curent{font-weight: 500;
 font-size: 14px;
@@ -35,75 +134,8 @@ transition: color;
     background-color: var(--background-buton-color);
 }
 }
-/* tekuschaya stranica */
 
-
-
-// .container-head{
-//      display: flex;
-//     margin: 0 auto;
-//      width: 1200px;
-// }
-.container__head-nav{display:flex;
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-nav__link{
-    width: 294;
-    height: 16px;
-    padding-right: 50px;
-  &:last-child{
-        padding-right: 0;
-    }
-
-  }
-    
-.menu-nav__site{
-    margin-right: 305px;
-    margin-left: 93px;
-    display: flex;
-  
-}
-.menu{display: flex;
-     justify-content: center;
-    align-items: center;
-    
-  }
-// .contact-head{
-//   display: flex;
-// }
-  .head{
-    padding-top: 24px;
-    padding-bottom: 25px;
-     border-bottom: 1px solid #ECECEC;
-  }
-
-      .head-mail{
-        display: flex;
-        justify-content: center;
-        margin-right: 50px;
-        width: 161px;
-      font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--grey-color);
-transition: color;
- transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, &:focus{
-    color: var(--background-buton-color);}
-
-     &:focus .head-mail__icon,
-     &:hover .head-mail__icon{
-         fill:var(--background-buton-color)
-     }
-
-      }
-     .head-mail__icon {
+  .head-mail__icon {
        fill: var(--color-icon);
         margin-right: 10px;
       transition: fill;
@@ -117,24 +149,16 @@ transition: color;
         transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
-     
-    .head-tel{display: flex;
-      &:focus .head-tel__icon,
-     &:hover .head-tel__icon{
-         fill:var(--background-buton-color)
-     } 
-
-        width: 142px;
-        font-weight: 500;
+   .link{font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--grey-color);
+color: var(--brand-color);
 transition: color;
  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover, &:focus{
-    color: var(--background-buton-color);}
-
-      }
-
+&:hover, 
+&:focus{
+    color:var(--background-buton-color);
+}
+}
