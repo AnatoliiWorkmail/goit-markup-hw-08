@@ -1,5 +1,4 @@
-   /* ------Index--- zakaz-uslugi- */ 
- .buton-order{   
+.buton-order{
 font-family: Roboto;
 font-weight: 700;
 font-size: 16px;
@@ -17,52 +16,7 @@ background: var(--background-buton-color);
 color:var(--white-color);
 background: var(--background-buton-color)
 }
-}
 
-/* ----------index----------h1-------- */
-.index-head{
- font-family: Roboto;
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-color: var(--white-color);
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-}
-.index-head-background{
-   background-color: var(--background-color);
-padding-top: 200px;
-padding-bottom: 200px;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
-rgba(47, 48, 58, 0.4)),
-url(../images/img-h1.jpg) ;
-background-repeat: no-repeat;
-background-size: 1600px 600px;
-background-position: center;
-
-}
-
- 
-      /* ---------inex-position-----zakaz-uslug--- */
-      .container-head-index{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-content: center;
-          
-         
-        
-      }
-      .index-head{
-          display: flex;
-           width: 696px;
-        
-          margin-right: auto;
-         margin-left: auto;
-         margin-bottom: 40px;
-      }
-      .buton-order{
           display: flex;
           width: 200px;
           margin-top: 0;
@@ -76,3 +30,67 @@ background-position: center;
          padding-left: 32px;
          padding-right: 32px;
       }
+
+
+
+.index-head-background{
+   background-color: var(--background-color);
+padding-top: 200px;
+padding-bottom: 200px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+
+   @media screen and (min-width: 320px) and (max-width: 767px){
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)),
+url(../images/img-mob/header-mob-img.jpg) ;
+
+   }
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)),
+url(../images/img-tab/header-tab-img.jpg) ;
+
+}
+    @media screen and (min-width: 1200px){
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)),
+url(../images/img-desk/heder-desk.jpg) ;
+
+    }
+
+}
+
+  .container-head-index{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+               
+      }
+       .index-head{
+          display: flex;
+          
+          margin-right: auto;
+         margin-left: auto;
+         margin-bottom: 40px;
+ font-family: Roboto;
+font-weight: 900;
+width: 360px;
+ font-size: 26px;
+line-height: 1.36;
+color: var(--white-color);
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+ @media screen and (min-width: 1200px){
+ width: 696px;
+ font-size: 44px;
+ }
+
+
+}

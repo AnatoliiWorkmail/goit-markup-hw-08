@@ -1,46 +1,67 @@
-   
-/* ------качества */
-.index-quality{
-   font-family: Roboto;
+.container-quality {
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;}
+}
+
+.quality-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:nth-last-of-type(n+2){
+       margin-right: 30px;}
+    
+}
+
+.quality-icon-container {
+       display: flex;
+    justify-content: center;
+     background:var(--color-baton);
+     border-radius: 4px;
+     height: 120px;
+     
+      @media screen and (min-width: 320px) and (max-width: 767px){
+        width: 450px;        
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+          width: 354px;
+      } 
+      @media screen and (min-width: 1200px){
+         width: 270px; 
+      }
+      }
+     
+
+// .quality-icon {}
+
+.index-quality {
+       font-family: Roboto;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase; 
 color: var(--brand-color);
+ margin-top: 30px
 }
-/*  class="index-quality-specific" */
-.index-quality-specific{
-    font-family: Roboto;
+.index-quality-specific {
+       font-family: Roboto;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--grey-color);
+justify-content: center;
+margin-top: 10px;
+margin-bottom: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px){
+          width: 450px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+          width: 354px;
+      } 
+      @media screen and (min-width: 1200px){
+         width: 270px; }
 }
-
-/* -----position-index-quality----------- */
-.quality-block{
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-  
-    /* margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0px;
-    border-bottom: 0;
-    padding: 10px 10px 10px 10px; */
-&:nth-last-of-type(n+2){
-    display: flex;
-    margin-right: 30px;
-
-}
-
-}
-
 .quality{
     display:flex;
     padding-top: 94px;
@@ -49,28 +70,3 @@ color: var(--grey-color);
     align-content: center;
     margin: 0 auto;
 }
-
-.index-quality{
-    width: 270px;
-    margin-top: 30px;
-}
-.index-quality-specific{
-   margin-top: 10px;
-     width: 270px;
-}
-.container-quality{display: flex;}
-/* -------------icon-index-quality---- */
-
-.quality-icon{display: flex;
-    justify-content: center;
-      
- 
-}
-.quality-icon-container{
-    display: flex;
-    justify-content: center;
-     background:var(--color-baton);
-     border-radius: 4px;
-     height: 120px;
-}
-    

@@ -1,0 +1,35 @@
+   /* ------Index--- zakaz-uslugi- */ 
+
+
+/* ----------index----------h1-------- */
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px){}
+    @media screen and (min-width: 320px) and (max-width: 767px){}
+    @media screen and (min-width: 1200px){}
+
+// .index-head-background{
+//    background-color: var(--background-color);
+// padding-top: 200px;
+// padding-bottom: 200px;
+// background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+// rgba(47, 48, 58, 0.4)),
+// url(../images/img-h1.jpg) ;
+// background-repeat: no-repeat;
+// background-size: 1600px 600px;
+// background-position: center;
+
+// }
+
+ 
+      /* ---------inex-position-----zakaz-uslug--- */
+      .container-head-index{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          
+         
+        
+      }
+     
