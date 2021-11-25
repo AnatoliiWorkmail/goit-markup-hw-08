@@ -20,6 +20,12 @@ color:var(--white-color);
  min-width: 145px;
  display: flex;
     margin-bottom: 20px;
+     justify-content: center;
+      @media screen and (min-width: 320px) and (max-width: 767px){
+       
+        
+      }
+
 }
 
 .logo-head__link{

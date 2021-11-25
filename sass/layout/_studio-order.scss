@@ -73,10 +73,11 @@ url(../images/img-desk/heder-desk.jpg) ;
       }
        .index-head{
           display: flex;
-          
-          margin-right: auto;
          margin-left: auto;
+         margin-right: auto;
          margin-bottom: 40px;
+
+ 
  font-family: Roboto;
 font-weight: 900;
 width: 360px;
@@ -84,6 +85,8 @@ width: 360px;
 line-height: 1.36;
 color: var(--white-color);
 text-align: center;
+align-items: center;
+justify-content: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 

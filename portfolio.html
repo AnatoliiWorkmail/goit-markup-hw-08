@@ -23,12 +23,16 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body-style">
-    <header class="head ">
+      <header class="head ">
       <div class="container ">
         <div class="menu">
           <a class="logo-head " lang="en" href="index.html"
             ><span class="logo-head__link"> Web</span>Studio</a>
-          <div class="container__head-nav">
+            <button class="menu__button" type="button" data-modal-open>
+              <svg class="" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-menu40px"></use></svg></button>
+          
+            <div class="container__head-nav">
             <nav class="menu-nav">
               <ul class="menu-nav__site">
                 <li class="menu-nav__link">
@@ -40,6 +44,7 @@
                 <li class="menu-nav__link"><a class="link" href="#addres">Контакты</a></li>
               </ul>
             </nav>
+            <div class="header__contact">
             <a class=" head-mail" href="mailto:info@devstudio.com">
               <svg class="head-mail__icon contact-icon-envelope" width="20" height="16px">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
@@ -198,47 +203,56 @@
       </section>
     </main>
 
-    <footer class="footer-portfolio  ">
-        <div class=" container footer-container">
-          <div class="footer-conteiner-adress">
-        <a class="logo-foot" lang="en" href="index.html"><span class="logoo"> Web</span>Studio</a>
+<footer class="footer-portfolio">
+      <div class="container footer-container">
+        <div class="footer-conteiner-adress">
+          <a class="logo-foot" lang="en" href="index.html"><span class="logo-head__link"> Web</span>Studio</a>
 
-        <address class="foot-adres" id="addres">
-          <p class="adres">г.Киев, пр-т Леси Украинки, 26</p>
-          <p class="adres"><a class="contact-foot" href="mailto:info@example.com">info@example.com</a></p>
-          <p class="adres"><a class="contact-foot" href="tel:+380991111111">+380991111111</a></p>
-        </address></div>
-      <div class="footer-container-link">
-        <p class="footer-block-link-name">ПРИСОЕДИНЯЙТЕСЬ</p>
-        <ul class="footer-name-link" >
-              <li class="footer-personal-contact"><a class="footer-personal-link" href="">
-                <svg class="footer-personal-link-icon" width="20" height="20" >
+          <address class="foot-adres" id="addres">
+            <p class="adres">г.Киев, пр-т Леси Украинки, 26</p>
+            <p class="adres">
+              <a class="contact-foot" href="mailto:info@example.com">info@example.com</a>
+            </p>
+            <p class="adres"><a class="contact-foot" href="tel:+380991111111">+380991111111</a></p>
+          </address>
+        </div>
+        <div class="footer-container-link">
+          <p class="footer-block-link-name">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="footer-name-link">
+            <li class="footer-personal-contact">
+              <a class="footer-personal-link" href="">
+                <svg class="footer-personal-link-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-              </a></li>
+              </a>
+            </li>
 
-              <li class="footer-personal-contact"><a class="footer-personal-link" href="">
-                <svg class="footer-personal-link-icon" width="20" height="20" >
+            <li class="footer-personal-contact">
+              <a class="footer-personal-link" href="">
+                <svg class="footer-personal-link-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
-              </a></li>
+              </a>
+            </li>
 
-              <li class="footer-personal-contact"><a class="footer-personal-link" href="">
-                <svg class="footer-personal-link-icon" width="20" height="20" >
+            <li class="footer-personal-contact">
+              <a class="footer-personal-link" href="">
+                <svg class="footer-personal-link-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
-              </a></li>
+              </a>
+            </li>
 
-              <li class="footer-personal-contact"><a class="footer-personal-link" href="">
-                <svg class="footer-personal-link-icon" width="20" height="20" >
+            <li class="footer-personal-contact">
+              <a class="footer-personal-link" href="">
+                <svg class="footer-personal-link-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
-              </a></li>
-            </ul>
-
-      </div>
-
-      <div class="footer-container-input">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container-input">
           <p class="footer-block-input-name">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <div class="contact-footer-input-position">
             <label class="contact-form-foter" >
@@ -259,7 +273,9 @@
 
         </div>
 
+
+
       </div>
-      </footer>
+    </footer>
   </body>
 </html>
