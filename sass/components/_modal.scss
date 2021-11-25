@@ -7,16 +7,27 @@
     transition: opacity 500ms linear, visibility 500ms linear;
     
 }
-    .modal{
+    .modal{       
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+   width: 450px;
+   min-height: 609px;
     background-color: var(--white-color);
     border-radius: 4px;
     top: 50%;
     left: 50%;
     transform: scale(1)  translate(-50%, -50%);
     transition: transform  1000ms linear;
+@media screen and (max-width: 1199px){
+ padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+}
+     @media screen and (min-width: 1200px){
+          width: 528px;
+    min-height: 581px;
+
+     }
 
 } 
 .model-btn{
