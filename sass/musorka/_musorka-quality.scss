@@ -1,0 +1,61 @@
+@media screen and (min-width: 768px) and (max-width: 1199px){}
+    @media screen and (min-width: 320px) and (max-width: 767px){}
+    @media screen and (min-width: 1200px){}
+
+ width: calc((100% - 2 * 30px) / 2);
+  width: calc(100vw - 1.875rem);}
+       
+/* ------качества */
+// .index-quality{}
+// /*  class="index-quality-specific" */
+// .index-quality-specific {}
+
+/* -----position-index-quality----------- */
+.quality-block{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  
+    /* margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0px;
+    border-bottom: 0;
+    padding: 10px 10px 10px 10px; */
+&:nth-last-of-type(n+2){
+    display: flex;
+    margin-right: 30px;
+
+}
+
+}
+
+.quality{
+    display:flex;
+    padding-top: 94px;
+    padding-bottom: 47px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.index-quality{
+    width: 270px;
+   ;
+}
+
+.container-quality{display: flex;}
+/* -------------icon-index-quality---- */
+
+.quality-icon{display: flex;
+    justify-content: center;
+      
+ 
+}
+.quality-icon-container{
+ 
+}
+    
