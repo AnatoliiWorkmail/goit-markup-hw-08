@@ -97,7 +97,7 @@ color: var(--brand-color);
     color: var(--grey-color);}
 
 .portfolio-overflow{
-           width: 370px;
+          
            height: 294px;
             position: absolute;
           padding-top: 63px;
@@ -117,7 +117,16 @@ color: var(--brand-color);
            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1;
          transform: translatey(100%);
-      
+               @media screen and (min-width: 1200px){
+ width: 370px;
+         }
+         @media screen and (min-width: 768px) and (max-width: 1199px){
+           width: 354px;
+         }
+         @media screen and (max-width: 767px){
+width: 450px;
+         }
+           
   
         }
         .portfolio-img{
@@ -151,7 +160,7 @@ color: var(--brand-color);
           .portfolio-projekt-element{
            display: flex; 
            min-height: 404px;
-           width: 370px;
+          
            border-bottom: 1px solid var(--color-border);
            border-top: 1px solid var(--color-border);
            border-right: 1px solid var(--color-border);
@@ -171,6 +180,17 @@ color: var(--brand-color);
              1px 4px 6px rgba(0, 0, 0, 0.16);
              z-index: 3;
         } 
+         @media screen and (min-width: 1200px){
+ width: 370px;
+         }
+         @media screen and (min-width: 768px) and (max-width: 1199px){
+           width: 354px;
+         }
+         @media screen and (max-width: 767px){
+width: 450px;
+         }
+           
+         
           } 
 
 .portfolio-text{display: flex;

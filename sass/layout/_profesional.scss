@@ -26,6 +26,13 @@ border-radius: 0px 0px 4px 4px;
 // &:nth-last-of-type(n+2){
    margin-right: 30px;
 margin-bottom: 30px;
+ @media screen and (max-width: 1199px){
+     max-width: 354px;
+ }
+ @media screen and (max-width: 767px){
+     max-width: 450px;
+ }
+
 }
 .name-profesion-bloc{
     display:block;

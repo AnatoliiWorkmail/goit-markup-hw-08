@@ -22,7 +22,11 @@ li{list-style: none;}
 .portfolio-none{
     display: none;
 }
-
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 /* ----container ----------------*/
 
 .container {
