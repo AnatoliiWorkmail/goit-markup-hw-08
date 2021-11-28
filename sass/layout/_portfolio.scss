@@ -200,5 +200,7 @@ width: 450px;
 
 .portfolio-text{display: flex;
             flex-direction: column;
+            // flex-grow: 1;
+            // &:not(:first-of-type){flex-grow: 0;}
             
          }
