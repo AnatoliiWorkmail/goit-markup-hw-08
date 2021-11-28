@@ -3,21 +3,30 @@
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-
-
- @media screen and (min-width: 320px) and (max-width: 767px){
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+    transform: translateX(100%);
+    transition: transform 1000ms linear;
+    &.is-open{
+        transform: translateX(0);
+    }
+//  @media screen and (min-width: 320px) and (max-width: 767px){
      width: 100vw;
      height: 100vh;
      display: flex;
      flex-direction: column;
     justify-content: space-between;
     
- }
+ 
 
  @media screen and (min-width: 768px){
      display: none;
  }
 }
+// .container__mob-menu
 
 .mob-btn__close {
     border: none;
