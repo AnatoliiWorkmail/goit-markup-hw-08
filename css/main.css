@@ -375,7 +375,6 @@ img {
 .container__head-nav {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -400,10 +399,21 @@ img {
 .menu {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
   width: inherit;
   height: inherit;
-  padding-top: 16px;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 1199px) {
+  .menu {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    align-items: flex-start;
+  }
 }
 
 .head {
@@ -504,8 +514,10 @@ img {
   padding-right: 0;
 }
 
-.menu-nav {
-  margin-right: 80px;
+@media screen and (max-width: 1200px) {
+  .menu-nav {
+    margin-right: 80px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
