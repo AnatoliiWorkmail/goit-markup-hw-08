@@ -401,7 +401,18 @@ img {
   display: flex;
   width: inherit;
   height: inherit;
-  padding-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
