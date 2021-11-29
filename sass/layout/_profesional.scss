@@ -1,8 +1,9 @@
+.profesional{background-color: var(--color-baton);}
 .container-profesional{
     display: block;
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--color-baton);
+    
    @media screen and (min-width: 768px) and (max-width: 1199px){
        width: 768px;
        padding-top: 60px;
