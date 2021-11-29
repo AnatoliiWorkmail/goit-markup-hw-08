@@ -40,7 +40,10 @@ padding-bottom: 200px;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-
+ @media screen and (max-width: 1199px){
+   padding-top: 118px;
+padding-bottom: 118px;
+ }
 
    @media screen and (min-width: 320px) and (max-width: 767px){
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), 

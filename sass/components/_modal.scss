@@ -17,6 +17,10 @@
     left: 50%;
     transform: scale(1)  translate(-50%, -50%);
     transition: transform  1000ms linear;
+    @media screen and (max-width: 1199px){
+        width: 450px;
+        min-height: 609px;
+    }
 
 } 
 .model-btn{

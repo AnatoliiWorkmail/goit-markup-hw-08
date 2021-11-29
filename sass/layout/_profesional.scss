@@ -3,11 +3,15 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--color-baton);
-    width: 100vw;
+   @media screen and (min-width: 768px) and (max-width: 1199px){
+       width: 768px;
+       padding-top: 60px;
+    padding-bottom: 60px;
+   }
 }
 
 .profesional-block{display: flex;
-    justify-content:center;
+    // justify-content:center;
     align-items: center;
     margin-top: 50px;
     
@@ -71,7 +75,7 @@ line-height: 1,16;
 text-align: center;
 letter-spacing: 0.03em;
 @media screen and (max-width: 1199px){
-    width: 100vw;
+    
 }
 }
 

@@ -7,7 +7,7 @@ display: none;
 }
 
 .menu__button{position: absolute;
-  right: 20px;
+  right: 25px;
     background-color: transparent;
     border: none;
   @media screen and (min-width: 768px){display: none;}
@@ -149,14 +149,14 @@ transition: color;
 }
 
   .head-mail__icon {
-       fill: var(--color-icon);
+       fill: var(--grey-color);
         margin-right: 10px;
       transition: fill;
  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
    .head-tel__icon {
-       fill: var(--color-icon);
+       fill: var(--grey-color);
         margin-right: 10px;
         transition: fill;
         transition-duration: 250ms;

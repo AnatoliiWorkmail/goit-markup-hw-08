@@ -7,7 +7,10 @@
 .quality-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+    @media screen and (max-width: 767px){
+align-items: center;
+    }
 
      @media screen and (min-width: 1200px){
     &:nth-last-of-type(n+2){
@@ -70,9 +73,13 @@ margin-bottom: 30px;
 }
 .quality{
     display:flex;
-    padding-top: 94px;
-    padding-bottom: 47px;
+   padding-top: 60px;
+    padding-bottom: 60px;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    @media screen and (min-width: 1200px){
+         padding-top: 94px;
+         padding-bottom: 47px;
+    }
 }

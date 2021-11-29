@@ -27,17 +27,25 @@ letter-spacing: 0.03em;
 }
 
  .footer-container-link{display: flex;
-   align-items: center;
+   
    flex-direction: column;
-margin-left: auto;margin-right: auto;
+margin-left: auto;
+margin-right: auto;
   margin-bottom: 60px;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 1199px){
 justify-content: center;
+align-items: center;
     }
 //    margin-right: 93px;
 }
 .foot-adres{
-   margin-bottom: 60px;
+    @media screen and (max-width: 1199px){
+   margin-bottom: 60px;}
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
 }
 .footer-name-link{display: flex;}
 .footer-personal-contact{
@@ -180,8 +188,16 @@ border:none;
 .footer-conteiner-adress{
     margin-right: 76px;
     margin-left: 76px;
+ 
 }
 }
 .footer-icon-send{
     margin-left: 10px;
 }
+.footer-conteiner-adress{
+ @media screen and (min-width: 1200px){
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;}
+    }

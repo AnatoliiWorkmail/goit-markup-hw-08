@@ -1,6 +1,6 @@
   .portfolio-section{
  padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     @media screen and (min-width: 1200px){
         padding-top: 94px;
         padding-bottom: 94px;}
@@ -16,10 +16,13 @@
 }
 .projekt-filtr{
     display: flex;
-    margin-bottom: 50px;
+    
      height: 38px;
        flex-wrap: wrap;
 justify-content: start;
+@media screen  and (max-width: 768px){
+margin-bottom: 50px;
+}
  @media screen and (min-width: 1200px){
         justify-content:space-around;}
 
@@ -61,7 +64,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
- 
+ margin-left: -30px;
   margin-top: 40px;
   @media screen and (min-width: 768px) and (max-width: 1199px){
     margin-top: 30px;
@@ -77,11 +80,15 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
      .portfolio-projekt{
          display: flex;
          flex-wrap: wrap;
-         align-content: center;
+         margin-left: 30px;
            flex-basis: calc(100% / 9 - 30px);
-           margin-left: 30px;
+          // margin: auto;
+          justify-content: space-between;
            margin-bottom: 30px;      
            min-height: 404px;
+           @media screen and (min-width: 1200px){
+ margin-left: 30px;
+           }
           }
 
      
